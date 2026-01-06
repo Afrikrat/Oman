@@ -1,0 +1,132 @@
+.footer {
+    background-color: #f1f5f9;
+    /* Light Grey */
+    color: var(--color-text);
+    /* Slate Text */
+    padding: 3rem 0 2rem;
+    margin-top: auto;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.brand-col h3 {
+    color: var(--color-primary);
+    /* Navy */
+    margin-bottom: 0.2rem;
+}
+
+.subtitle {
+    color: var(--color-accent);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.mission-text {
+    color: #a0aec0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.footer-col h4 {
+    color: var(--color-primary);
+    /* Navy */
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-accent);
+}
+
+.links-col ul li {
+    margin-bottom: 0.8rem;
+}
+
+.links-col ul li a {
+    color: var(--color-text);
+    transition: color 0.2s;
+}
+
+.links-col ul li a:hover {
+    color: var(--color-accent);
+    padding-left: 5px;
+}
+
+.contact-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    align-items: flex-start;
+}
+
+.contact-list li svg {
+    flex-shrink: 0;
+    color: var(--color-accent);
+    margin-top: 4px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background: var(--color-accent);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--color-border);
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .brand-col {
+        text-align: center;
+    }
+}
